@@ -1,0 +1,133 @@
+.skill{
+    min-height: 100vh;
+    background-color: var(--secondary_bg);
+    position: relative;
+    box-shadow: 0px 1px 4px 2px rgb(185, 22, 22);
+
+    .skillContainer{
+        padding: var(--padding_top) var(--padding_left_right);
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        justify-content: center;
+        .skillp{
+            position: relative;
+            z-index: 1;
+            width: max-content;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 20px;
+            backdrop-filter: blur(10px);
+            &::before{
+                background-color: white;
+                content: "";
+                position: absolute;
+                inset: 0;
+                transform: translateX(calc(var(--padding_left_right) * -1));
+                z-index: -1;
+
+            }
+            p{
+                z-index: 1;
+                line-height: 5em;
+                font-size: 1.2em;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                text-align: center;
+               
+            }
+        }
+       
+        .innerBox{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            & > .skillBox{
+                width: 150px;
+                aspect-ratio: 1/1;
+                position: relative;
+                z-index: 0;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                overflow-y: hidden;
+                &>div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    z-index: 1;
+                    color: black;
+                    & > label{ transform: translateY(500%);}
+                }
+                &::before{
+                    opacity: 0;
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    inset: 0;
+                    background-color: currentColor;
+                    z-index: -1;
+                }
+                &:hover{
+                    overflow:visible;
+                    & > div{
+                        color: white;
+                        label{transform: none; transition: all 0.45s cubic-bezier(0.075, 0.82, 0.165, 1);}
+                    }
+                    &::before{
+                        opacity: 1;
+                        transform: scaleY(1.8);
+                        transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width : 500px){
+        .skillContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .skillp{
+                height: max-content;
+                width: 100%;
+                height: 40px;
+                p{
+                    line-height: 1em;
+                    width: 100%;
+                }
+                &::before{
+                    content: none;
+                }
+            }
+            .innerBox{
+                & > .skillBox{
+                    width: 120px;
+                    & > div{
+                        & > label{ 
+                            transform: none;
+                            color: white;
+                        }
+                    }
+                    &::before{
+                        opacity: 1;
+                    }
+                    &:hover{
+                        &::before{
+                            opacity: 1;
+                            transform: scaleY(1.1);
+                            transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,81 @@
+.rcontact{
+    background-color: var(--primary_bg );
+    .to_top{
+        position: relative;
+
+        background-color: black;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        cursor: pointer;
+        .to_top_svg{
+            position: absolute;
+            top: -40px;
+            width: 100%;
+                left: 0;
+            right: 0;
+            bottom: 0;
+            svg{
+                background-color: red;
+                width: 100%;
+                p{
+                 box-shadow: inset 0 0 4px 2px black;
+                }
+            }
+        }
+        
+     
+    }
+    .rcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        padding: 0 var(--padding_left_right);
+        min-height: 100vh;
+        @media (max-width : 767px){
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .rcont{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            h4{ 
+                width: 26ch;
+                background: linear-gradient(30deg, rgb(20, 218, 20), purple);
+                background-clip: text;
+                color: transparent;
+            }
+            a{
+                border: white 1px solid;
+                width: max-content;
+                padding: 10px;
+                border-radius: 2px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: black;
+                background-color: white;
+                transition: all 0.3s ease;
+                &:hover{
+                    flex-direction: row-reverse;
+                    background-color: inherit;
+                    color: white;
+                }
+            }
+        }
+        .svg{
+            margin-top: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+}

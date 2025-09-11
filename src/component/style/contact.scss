@@ -1,0 +1,69 @@
+.contact{
+    display: block;
+    min-height: calc(100vh - 100px);
+    .contactContainer{
+        padding: 0 0 0 var(--padding_left_right) ;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        @media (max-width : 768px) {
+            grid-template-columns: 1fr;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 30px;
+        }
+        .hello{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h4{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+        
+        .mainContact{
+            background-color:  rgb(245,247,249);
+            display: grid;
+            height: 100%;
+            gap: 30px;
+            padding: calc(var( --padding_top ) * 2) var(--padding_left_right);
+            .contactElement{
+                display: grid;
+                gap: 2px;
+                label{
+                    font-weight: bolder;
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+                input, textarea{
+                    border: none;
+                    height: 40px;
+                    padding: 0 10px;
+                    color: gray;
+                    min-width: 200px;
+                }
+       
+                textarea{
+                    resize: vertical;
+                    height: 100px;
+                }
+            }
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100px;
+                gap: 10px;
+                background-color: green;
+                border: solid 2px yellowgreen;
+                border-radius: 5px;
+                height: 40px;
+                &:active, &:hover{
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+    }
+}
