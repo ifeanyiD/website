@@ -1,0 +1,59 @@
+.about-page {
+  font-family: "Arial", sans-serif;
+  color: #2c3e50;
+  line-height: 1.6;
+
+  section {
+    padding: 4rem var(--padding_left_right);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  .hero {
+    background: #f9fbfd;
+    flex-wrap: wrap;
+
+    .hero-text {
+
+      h1 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: #555;
+      }
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: right;
+    }
+  }
+
+  .mission,
+  .story {
+    flex-wrap: wrap;
+
+    .mission-text,
+    .story-text {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    .mission-image,
+    .story-image {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+}

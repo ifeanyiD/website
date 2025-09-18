@@ -6,9 +6,6 @@ import Work from '../component/work';
 import Skill from '../component/skill';
 import Rcontact from '../component/Rcontact';
 import Carton from '../component/animation/person';
-// import Work from '../../component/rootWork/work';
-// import Rcontact from '../../component/rootContact/rcontact';
-// import Skill from '../../component/skill/skill';
 
 
   export default function Root() {

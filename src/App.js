@@ -4,6 +4,7 @@ import Layout from "./pages/layout";
 import Root from "./pages/root";
 import Contact from "./pages/contact";
 import Portfolio from "./pages/portfolio";
+import About from "./pages/about";
 
 function App() {
     
@@ -16,7 +17,8 @@ function App() {
         { Component: Contact, path : "/contact"},
         { Component: Portfolio, path : "portfolio", children: [
           // {Component}
-        ]}
+        ]},
+        { Component: About, path : "/about"}
       ]
     }
   ])
