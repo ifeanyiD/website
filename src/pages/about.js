@@ -28,12 +28,12 @@ const About = () => {
           </p>
         </div>
       </section>
-
+    
       <section className="story">
         <div className="story-text">
           <h2>My Story</h2>
           <p>
-            With 3 years in web development, I specialize in creating responsive, secure, and scalable applications. I prioritize clean coding practices and effective UI/UX collaboration to deliver solutions that work seamlessly across devices and drive long-term success.
+            With 3+ years in web development, I specialize in creating responsive, secure, and scalable applications. I prioritize clean coding practices and effective UI/UX collaboration to deliver solutions that work seamlessly across devices and drive long-term success.
           </p>
         </div>
         <div className="story-image">

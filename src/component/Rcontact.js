@@ -41,20 +41,9 @@ export default function Rcontact() {
 
   return (
    <div className='rcontact' id='rcontact'>
-        <div className='to_top'  onClick={()=>window.scrollTo({top: 0, left : 0, behavior : "smooth"})}>
-            {/* <div className='triangle'></div>
-
-            <div className='to_top_svg'>
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                    viewBox="0 0 300 100" width="300" height="200">
-                    <path d="M10 50 L150 50 A50 50 0 0 1 250 50 L390 50"
-                        stroke="#ff5a5a" stroke-width="6" fill="none" stroke-linecap="round" />
-                </svg>
-            </div> */}
-        </div>
         <div className='rcontainer'>
             <div className='rcont'>
-                <h4>DO YOU HAVE A PROJECT TO DISCUSS?</h4>
+                <h1>DO YOU HAVE A PROJECT TO DISCUSS?</h1>
                 <i>engineerdavid04@gmail.com</i>
                 <NavLink to={"/contact"}><span>GET IN TOUCH</span><FaArrowTrendDown/></NavLink>
             </div>

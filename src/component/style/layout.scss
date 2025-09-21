@@ -16,7 +16,7 @@
                 color: black;
                 font-weight: bold;
                 &.active{
-                    color: green;
+                    color: var(--color);
                 }
                 &:hover{
                     text-decoration: line-through;
@@ -31,7 +31,6 @@
             
         }
         .name{
-            color:var(--color1);
             font-weight: bold;
             position: fixed;
             top: 0;

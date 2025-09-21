@@ -12,7 +12,7 @@ export default function Footer() {
         <p>&copy;2025 <i> David</i></p>
         <div className='footer_links'>
             <NavLink className={active} to={"/"}>Home</NavLink>
-            <NavLink className={active} to={"#"}>About</NavLink>
+            <NavLink className={active} to={"/about"}>About</NavLink>
             <NavLink className={active} to={"portfolio"}>Portfolio</NavLink>
             <NavLink className={active} to={"/contact"}>Contact</NavLink>
         </div>

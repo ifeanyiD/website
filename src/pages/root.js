@@ -18,9 +18,9 @@ import Carton from '../component/animation/person';
             </div>
           </div>
           <aside>
-            <h1>Full-stack Developer</h1>
-            <h4>I engineer solutions interfaces that mirror the design — down to the last pixel.</h4>
-            <p>Crafting seamless user experiences with pixel-perfect interfaces backed by solid full-stack logic.</p>
+            <h1 className='transit'>Full-stack Developer</h1>
+            <h4 className='transit'>I engineer solutions interfaces that mirror the design — down to the last pixel.</h4>
+            <p className='transit'>Crafting seamless user experiences with pixel-perfect interfaces backed by solid full-stack logic.</p>
             <NavLink to={"/contact"} className="btnHireMe"><span>Let's work</span><GoArrowDownRight/></NavLink>
           </aside>
       </div>

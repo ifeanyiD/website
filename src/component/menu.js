@@ -17,7 +17,7 @@ export default function Menu({setMenu}) {
         <div>
             <ul>
                 <li onClick={()=>setMenu(false)}><NavLink to={"/"} className={active}>Home</NavLink></li>
-                <li onClick={()=>setMenu(false)}><NavLink to={"/about-me"} className={active}>About</NavLink></li>
+                <li onClick={()=>setMenu(false)}><NavLink to={"/about"} className={active}>About</NavLink></li>
                 <li onClick={()=>setMenu(false)}><NavLink to={"/portfolio"} className={active}>Portfolio</NavLink></li>
                 <li onClick={()=>setMenu(false)}><NavLink to={"/contact"} className={active}>Contact</NavLink></li>
             </ul>

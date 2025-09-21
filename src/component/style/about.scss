@@ -5,10 +5,11 @@
 
   section {
     padding: 4rem var(--padding_left_right);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     align-items: center;
     justify-content: space-between;
-
+  
     img {
       width: 100%;
       max-width: 300px;
@@ -39,7 +40,7 @@
   .mission,
   .story {
     flex-wrap: wrap;
-
+    
     .mission-text,
     .story-text {
       flex: 1;

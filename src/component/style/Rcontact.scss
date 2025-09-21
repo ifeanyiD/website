@@ -1,33 +1,5 @@
 .rcontact{
     background-color: var(--primary_bg );
-    .to_top{
-        position: relative;
-
-        background-color: black;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       
-        cursor: pointer;
-        .to_top_svg{
-            position: absolute;
-            top: -40px;
-            width: 100%;
-                left: 0;
-            right: 0;
-            bottom: 0;
-            svg{
-                background-color: red;
-                width: 100%;
-                p{
-                 box-shadow: inset 0 0 4px 2px black;
-                }
-            }
-        }
-        
-     
-    }
     .rcontainer{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -46,7 +18,8 @@
             align-items: center;
             justify-content: center;
             gap: 20px;
-            h4{ 
+            color: gray;
+            h1{ 
                 width: 26ch;
                 background: linear-gradient(30deg, rgb(20, 218, 20), purple);
                 background-clip: text;

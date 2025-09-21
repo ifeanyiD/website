@@ -8,6 +8,9 @@
         align-items: center;
         position: relative;
         flex-direction: row-reverse;
+        .transit{
+            animation: transit 1s linear ;
+        }
         .root_layout{
             background-color: var(--secondary_bg);
             max-width: 700px;
@@ -45,7 +48,7 @@
                 font-family: "Great Vibes";
                 font-size: clamp(32px, 6vw, 65px);
                 &::first-letter{
-                    color: green;
+                    color: var(--color);
                     font-size: 1.5em;
                 }
             } 
@@ -75,7 +78,7 @@
                 }
             }
             p{
-                color:green;
+                color:var(--color);
                 font-weight: bold;
             }
             .btnHireMe{
@@ -105,3 +108,12 @@
 }
 
 
+
+@keyframes transit {
+    0%{
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    50%, 80%{ opacity: 0.5;}
+    100%{ opacity: 1;}
+}

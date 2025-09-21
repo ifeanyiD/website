@@ -2,6 +2,7 @@ import React, { useEffect,  useState } from 'react';
 import  {data1} from "../utils/data/portfolioData";
 import { createSearchParams,  useNavigate,  } from 'react-router-dom';
 import "./style/work.scss";
+import { truncateAtWord } from '../utils/helper/truncateWord';
 
 export default function Work() {
     const [tabBox, setTabBox] = useState([]);
@@ -73,7 +74,7 @@ export default function Work() {
                                 tabBox[0]?.tech.map((res, id)=> <li key={id}>{res}</li>)
                             }
                             </ul>
-                            <p>{tabBox[0]?.about}</p>
+                            <p>{tabBox[0] && truncateAtWord(tabBox[0]?.about, 40)}</p>
                         </div>
                         <div className='tab_bg_img' >
                             <span>Open...</span>
@@ -88,7 +89,7 @@ export default function Work() {
                                 tabBox[1]?.tech.map((res, id)=> <li key={id}>{res}</li>)
                             }
                             </ul>
-                            <p>{tabBox[1]?.about}</p>
+                            <p>{tabBox[0] && truncateAtWord(tabBox[1]?.about, 40)}</p>
 
                         </div>
                         <div className='tab_bg_img'>
@@ -105,7 +106,7 @@ export default function Work() {
                                 tabBox[2]?.tech.map((res, id)=> <li key={id}>{res}</li>)
                                 }
                             </ul>
-                            <p>{tabBox[2]?.about}</p>
+                            <p>{tabBox[0] && truncateAtWord(tabBox[2]?.about, 40)}</p>
 
                         </div>
                         <div className='tab_bg_img'>
@@ -119,7 +120,7 @@ export default function Work() {
                                 tabBox[3]?.tech.map((res, id)=> <li key={id}>{res}</li>)
                             }
                             </ul>
-                            <p>{tabBox[3]?.about}</p>
+                            <p>{tabBox[0] && truncateAtWord(tabBox[3]?.about, 40)}</p>
 
                         </div>
                         <div className='tab_bg_img'>
@@ -136,7 +137,7 @@ export default function Work() {
                                 tabBox[4]?.tech.map((res, id)=> <li key={id}>{res}</li>)
                             }
                             </ul>
-                            <p>{tabBox[4]?.about}</p>
+                            <p>{tabBox[0] && truncateAtWord(tabBox[4]?.about, 40)}</p>
 
                         </div>
                         <div className='tab_bg_img'>
@@ -150,7 +151,7 @@ export default function Work() {
                                 tabBox[5]?.tech.map((res, id)=> <li key={id}>{res}</li>)
                             }
                             </ul>
-                            <p>{tabBox[5]?.about}</p>
+                            <p>{tabBox[0] && truncateAtWord(tabBox[5]?.about, 40)}</p>
 
                         </div>
                         <div className='tab_bg_img'>
